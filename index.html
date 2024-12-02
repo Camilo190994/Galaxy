@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscador de imágenes de la NASA</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="text-center container">
+      <div class="row py-lg-3">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Buscador de imágenes de la NASA</h1>
+          <p class="lead text-muted">Ingresa un término para buscar imágenes relacionadas con la NASA.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulario de búsqueda -->
+    <div class="container mt-4">
+      <form id="search-form" class="d-flex">
+        <input id="search-input" class="form-control me-2" type="search" placeholder="Buscar imágenes" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+      </form>
+      <div id="results" class="d-flex flex-wrap gap-3 mt-4"></div>
+    </div>
+  </main>
+
+  <script src="js/space.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
